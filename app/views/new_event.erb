@@ -1,10 +1,10 @@
 <form id="new" method="POST" action="/events/create" style="padding: 20px;">
 
-	<input type="text" name ="user[organizer_name]" placeholder="Organizer Name">
+	<input type="text" name ="user[organizer_name]" placeholder="Organizer Name" value="<%= @event.organizer_name %>">
 	<br>
-	<input type="text" name ="user[organizer_email]" placeholder="Organizer Email">
+	<input type="text" name ="user[organizer_email]" placeholder="Organizer Email" value = "<%= @event.organizer_email %>">
 	<br>
-	<input type="text" name ="user[title]" placeholder="Event Title">
+	<input type="text" name ="user[title]" placeholder="Event Title" value = "<%= @event.title %>">
 	<br>
 	<input type="date" name ="user[date]">
 	<br>
