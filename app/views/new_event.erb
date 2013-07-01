@@ -1,0 +1,23 @@
+<form id="new" method="POST" action="/events/create" style="padding: 20px;">
+
+	<input type="text" name ="user[organizer_name]" placeholder="Organizer Name">
+	<br>
+	<input type="text" name ="user[organizer_email]" placeholder="Organizer Email">
+	<br>
+	<input type="text" name ="user[title]" placeholder="Event Title">
+	<br>
+	<input type="date" name ="user[date]">
+	<br>
+	<input type="submit" value="Submit">
+
+
+    <p style="color:red">
+      <% @event.errors.each do |field,message| %>
+      <%= field %>
+      <%= message %>
+      <br>
+      <% end %>
+    </p>
+
+</form>
+
